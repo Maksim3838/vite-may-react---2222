@@ -1,4 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
+import { TailSpin } from "react-loader-spinner";
+
 
 export default function App() {
   const { data, isLoading, error } = useQuery({
@@ -9,7 +11,14 @@ export default function App() {
     },
   });
 
-  if (isLoading) return <p>Loading...</p>;
+  if (isLoading)
+  return (
+    <TailSpin
+      height="50"
+      width="50"
+      color="#4fa94d"
+    />
+  );
   if (error) return <p>Error...</p>;
 
   return (

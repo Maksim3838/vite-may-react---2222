@@ -1,30 +1,41 @@
-import { useQuery } from "@tanstack/react-query";
-import { TailSpin } from "react-loader-spinner";
+import NatureInfo from "../NatureInfo"
 
+const natureImages = [
+  {
+    title: "Mountain",
+    image:
+      "https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=1200",
+  },
+  {
+    title: "Forest",
+    image:
+      "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=1200",
+  },
+  {
+    title: "Lake",
+    image:
+      "https://images.unsplash.com/photo-1500375592092-40eb2168fd21?q=80&w=1200",
+  },
+  {
+    title: "Ocean",
+    image:
+      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200",
+  },
+  {
+    title: "Waterfall",
+    image:
+      "https://images.unsplash.com/photo-1502082553048-f009c37129b9?q=80&w=1200",
+  },
+];
 
 export default function App() {
-  const { data, isLoading, error } = useQuery({
-    queryKey: ["character"],
-    queryFn: async () => {
-      const res = await fetch("https://rickandmortyapi.com/api/character");
-      return res.json();
-    },
-  });
-
-  if (isLoading)
-  return (
-    <TailSpin
-      height="50"
-      width="50"
-      color="#4fa94d"
-    />
-  );
-  if (error) return <p>Error...</p>;
+  
 
   return (
-    <div>
-      <h1>Hello</h1>
-      <pre>{JSON.stringify(data, null, 2)}</pre>
-    </div>
+    <>
+     {natureImages.map((item) => (
+        <NatureInfo key={item.title} item={item} />
+      ))}
+    </>
   );
 }

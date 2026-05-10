@@ -1,5 +1,4 @@
-
-export interface NatureType {
-  title: string;
-  image: string;
+export interface Nature {
+    title: string,
+    image: string,
 }

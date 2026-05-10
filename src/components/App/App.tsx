@@ -28,14 +28,29 @@ const natureImages = [
   },
 ];
 
-export default function App() {
-  
 
+ export default function App() {
   return (
     <>
-     {natureImages.map((item) => (
-        <NatureInfo key={item.title} item={item} />
+       {natureImages.map((item) => (
+        <NatureInfo
+          key={item.title}
+          nature={item}
+        />
       ))}
-    </>
-  );
+   </>
+  )
 }
+
+
+
+
+
+
+
+
+
+
+
+
+

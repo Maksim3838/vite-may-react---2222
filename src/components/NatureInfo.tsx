@@ -1,32 +1,19 @@
-import type {NatureType } from "./type/Nature"
 
+import type { Nature } from "../components/type/Nature"
 
-
-type Props = {
-    item: NatureType;
-};
-
-export default function NatureInfo({item}: Props) {
-    return (
-        <><h1>{item.title}</h1>
-       
-           <div style={{ overflow: "hidden", width: 500 }}>
-  <img
-    src={item.image}
-    alt={item.title}
-    style={{
-      width: "100%",
-      transition: "0.3s",
-    }}
-    onMouseOver={(e) => {
-      e.currentTarget.style.transform = "scale(1.2)";
-    }}
-    onMouseOut={(e) => {
-      e.currentTarget.style.transform = "scale(1)";
-    }}
-  />
-</div>
-        </>
-        
-    )
+interface NatureInfoProps {
+    nature: Nature;
 }
+
+export default function NatureInfo({nature}:NatureInfoProps) {
+    return(
+        <>
+            <h1>{nature.title }</h1>
+            <img
+                src={nature.image}
+                alt={nature.title}
+                width={300}/>
+        </>
+    )
+ }
+ 

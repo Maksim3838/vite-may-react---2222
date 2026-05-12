@@ -1,4 +1,5 @@
-import NatureInfo from "../NatureInfo"
+import Nature from "../Nature"
+
 
 const natureImages = [
   {
@@ -29,21 +30,21 @@ const natureImages = [
 ];
 
 
- export default function App() {
+
+export default function App() {
+  
   return (
     <>
-       {natureImages.map((item) => (
-        <NatureInfo
+      {natureImages.map((item) => (
+       <Nature
           key={item.title}
-          nature={item}
+          natureType={item}
         />
-      ))}
-   </>
-  )
+        ))}
+      
+    </>
+  );
 }
-
-
-
 
 
 

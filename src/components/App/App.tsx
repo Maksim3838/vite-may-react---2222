@@ -33,18 +33,18 @@ const natureImages = [
      "imagess/8.jpg"
   },
   {
-    title: "Waterfall",
+    title: "Відпочинок",
     image:
      "imagess/9.jpg"
   },
   {
-    title: "Waterfall",
+    title: "Розваги",
     image:
      "imagess/10.jpg"
   },
   
     {
-    title: "Waterfall",
+    title: "Атракціон",
     image:
      "imagess/13.jpg"
   },

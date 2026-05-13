@@ -15,8 +15,8 @@ export default function Nature({ natureType }: natureTypeProps) {
       setCount(0);
     };
     
-    const minClick=() => {
-        setCount((prev) => prev - 1);
+    const minClick = () => {
+        setCount((prev) => { if (prev > 0) { return prev - 1 }; return prev} );
     }
     return (
         <>

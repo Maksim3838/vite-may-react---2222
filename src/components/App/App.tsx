@@ -8,27 +8,27 @@ const natureImages = [
      
   },
       {
-    title: "Ocean",
+    title: "Прогулянка",
     image:
       "imagess/3.jpg"
   },
     {
-    title: "Waterfall",
+    title: "Природа",
     image:
      "imagess/5.jpg"
   },
   {
-    title: "Waterfall",
+    title: "Весна",
     image:
      "imagess/6.jpg"
   },
   {
-    title: "Waterfall",
+    title: "Марк та Емілія",
     image:
      "imagess/7.jpg"
   },
   {
-    title: "Waterfall",
+    title: "Веселощі",
     image:
      "imagess/8.jpg"
   },
@@ -42,11 +42,7 @@ const natureImages = [
     image:
      "imagess/10.jpg"
   },
-  {
-    title: "Waterfall",
-    image:
-     "imagess/11.jpg"
-  },
+  
     {
     title: "Waterfall",
     image:

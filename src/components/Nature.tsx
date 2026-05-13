@@ -21,7 +21,7 @@ export default function Nature({ natureType }: natureTypeProps) {
     return (
         <>
             <h1>{natureType.title}</h1>
-            <img src={natureType.image} alt={natureType.title} width={600} />
+            <img src={natureType.image} alt={natureType.title} width={300} />
             <button onClick={hendelClic}>cliсk</button>
             <span>{count}</span>
             <button onClick={minClick}>Min</button>
